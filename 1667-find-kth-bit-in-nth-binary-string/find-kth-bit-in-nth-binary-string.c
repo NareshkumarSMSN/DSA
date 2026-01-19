@@ -11,7 +11,7 @@ char findKthBit(int n, int k) {
         strcpy(temp,str);
 
         for(int j = 0; j<len;j++){
-            temp[j] = (temp[len-1-j] == '0') ? '1' : '0';
+            temp[j] = (str[len-1-j] == '0') ? '1' : '0';
         }
         temp[len] = '\0';
         str[len] = '1';
